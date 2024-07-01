@@ -1,0 +1,52 @@
+.game {
+    position: relative;
+    margin-inline: auto;
+    width: 340px;
+    height: 540px;
+    margin-inline: auto;
+
+    &__paper {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--paper);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--paper-shadow);
+    }
+
+    &__rock {
+        position: absolute;
+        top: 285px;
+        left: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--rock);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--rock-shadow);
+    }
+
+    &__scissors {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--scissors);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--scissors-shadow);
+    }
+}

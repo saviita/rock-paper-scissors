@@ -1,0 +1,24 @@
+.rules {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 12rem;
+
+    &__img {
+        margin-bottom: .5rem;
+    }
+
+    &__simple {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    &__advanced {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    &__text {
+        color: var(--white);
+    }
+}

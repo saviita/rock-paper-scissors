@@ -1,1 +1,14 @@
+.text {
+    &--name {
+        color: hsl(229deg, 64%, 46%);
+        font-size: 1.25rem;
+    }
 
+    &--score {
+        font-size: 2.5rem;
+    }
+
+    &--title {
+        font-size: 3rem;
+    }
+}

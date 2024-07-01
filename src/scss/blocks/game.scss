@@ -5,6 +5,10 @@
     height: 540px;
     margin-inline: auto;
 
+    &__img {
+        pointer-events: none;
+    }
+
     &__paper {
         position: absolute;
         top: 100px;

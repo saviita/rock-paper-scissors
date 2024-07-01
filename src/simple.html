@@ -16,7 +16,7 @@
         <div class="score">
             <div class="score__scoreboard">
                 <span class="name text--name">YOU</span>
-                <span class="score__score text--score">0</span>
+                <span id="points-user" class="score__score text--score">0</span>
             </div>
             <div class="score__text">
                 <span class="text--title">ROCK</span>
@@ -25,20 +25,26 @@
             </div>
             <div class="score__scoreboard">
                 <span class="name text--name">PC</span>
-                <span class="score__score text--score">0</span>
+                <span id="points-pc" class="score__score text--score">0</span>
             </div>
         </div>
 
-        <div class="game">
-            <div class="game__paper">
+        <span id="result"></span>
+
+        <div class="game" id="game-items">
+            <div class="game-item game__paper" data-item="paper">
                 <img src="assets/images/icon-paper.svg" alt="" class="game__img">
             </div>
-            <div class="game__scissors">
+            <div class="game-item game__scissors" data-item="rock">
                 <img src="assets/images/icon-rock.svg" alt="" class="game__img">
             </div>
-            <div class="game__rock">
+            <div class="game-item game__rock" data-item="scissors">
                 <img src="assets/images/icon-scissors.svg" alt="" class="game__img">
             </div>
+        </div>
+
+        <div class="results">
+            
         </div>
     </main>
     <script type="module" src="./js/index.js"></script>

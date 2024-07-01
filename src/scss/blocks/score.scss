@@ -1,6 +1,7 @@
 .score {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 2px solid #606e85;
     border-radius: 1rem;
     width: 90%;
@@ -16,6 +17,7 @@
         border-radius: 1rem;
         background-color: var(--white);
         width: 100px;
+        height: 100px;
         padding-block: 0.5rem;
     }
 

@@ -1,23 +1,42 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
 
-const gameItemsElements = document.getElementById('game-items');
+const simpleItemsElements = document.getElementById('game-items-simple');
+const advancedItemsElements = document.getElementById('game-items-advanced')
 const resultElement = document.getElementById('result');
 const pointsUserElement = document.getElementById('points-user');
 const pointsPcElement = document.getElementById('points-pc');
 const gameOptions = ['rock', 'paper', 'scissors'];
 const gameRules = {
   rock: {
+    scissors: true,
+    lizard: true,
     paper: false,
-    scissors: true
+    spock: false
+  },
+  scissors: {
+    paper: true,
+    lizard: true,
+    rock: false,
+    spock: false
   },
   paper: {
     rock: true,
+    spock: true,
+    lizard: false,
     scissors: false
   },
-  scissors: {
-    rock: false,
-    paper: true
+  lizard: {
+    paper: true,
+    spock: true,
+    scissors: false,
+    rock: false
+  },
+  spock: {
+    rock: true,
+    scissors: true,
+    paper: false,
+    lizard: false
   }
 };
 
@@ -59,7 +78,13 @@ const setUserSelection = selection => {
   console.log(`user selection = ${userSelection}`);
 };
 
-gameItemsElements.addEventListener('click', event => {
+simpleItemsElements.addEventListener('click', event => {
+  if (!event.target.classList.contains('game-item')) return;
+  setUserSelection(event.target.dataset.item);
+  console.log(event)
+});
+advancedItemsElements.addEventListener('click', event => {
+  console.log(event)
   if (!event.target.classList.contains('game-item')) return;
   setUserSelection(event.target.dataset.item);
 });

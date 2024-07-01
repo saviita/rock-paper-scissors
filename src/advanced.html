@@ -9,7 +9,48 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <h1>Hola</h1>
+    <main class="main">
+      <div class="score">
+          <div class="score__scoreboard">
+              <span class="name text--name">YOU</span>
+              <span id="points-user" class="score__score text--score">0</span>
+          </div>
+          <div class="score__text">
+              <span class="text--title">ROCK</span>
+              <span class="text--title">PAPER</span>
+              <span class="text--title">SCISSORS</span>
+          </div>
+          <div class="score__scoreboard">
+              <span class="name text--name">PC</span>
+              <span id="points-pc" class="score__score text--score">0</span>
+          </div>
+      </div>
+
+      <span id="result"></span>
+
+      <div class="advanced" id="game-items-advanced">
+          <div class="game-item advanced__paper" data-item="paper">
+              <img src="assets/images/icon-paper.svg" alt="" class="game__img">
+          </div>
+          <div class="game-item advanced__scissors" data-item="rock">
+              <img src="assets/images/icon-rock.svg" alt="" class="game__img">
+          </div>
+          <div class="game-item advanced__rock" data-item="scissors">
+              <img src="assets/images/icon-scissors.svg" alt="" class="game__img">
+          </div>
+          <div class="game-item advanced__lizard" data-item="lizard">
+              <img src="assets/images/icon-lizard.svg" alt="" class="game__img">
+          </div>
+          <div class="game-item advanced__spock" data-item="spock">
+              <img src="assets/images/icon-spock.svg" alt="" class="game__img">
+          </div>
+          
+      </div>
+
+      <div class="results">
+          
+      </div>
+  </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

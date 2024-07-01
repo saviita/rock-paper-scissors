@@ -1,0 +1,85 @@
+.advanced {
+    position: relative;
+    margin-inline: auto;
+    width: 340px;
+    height: 540px;
+    margin-inline: auto;
+    background-image: url(../../assets/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__paper {
+        position: absolute;
+        top: 175px;
+        left: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--paper);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--paper-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
+    }
+
+    &__rock {
+        position: absolute;
+        top: 350px;
+        left: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--rock);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--rock-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
+    }
+
+    &__scissors {
+        position: absolute;
+        top: 50px;
+        right: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--scissors);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--scissors-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
+    }
+
+    &__lizard {
+        position: absolute;
+        top: 350px;
+        left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--lizard);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--lizard-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
+    }
+
+    &__spock {
+        position: absolute;
+        top: 175px;
+        left: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        width: 115px;
+        height: 115px;
+        border: 15px solid var(--spock);
+        border-radius: 50%;
+        box-shadow: 0 5px var(--spock-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
+    }
+}

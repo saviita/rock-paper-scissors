@@ -1,8 +1,7 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
 
-const simpleItemsElements = document.getElementById('game-items-simple');
-const advancedItemsElements = document.getElementById('game-items-advanced')
+const itemsElements = document.getElementById('game-items');
 const resultElement = document.getElementById('result');
 const pointsUserElement = document.getElementById('points-user');
 const pointsPcElement = document.getElementById('points-pc');
@@ -78,13 +77,8 @@ const setUserSelection = selection => {
   console.log(`user selection = ${userSelection}`);
 };
 
-simpleItemsElements.addEventListener('click', event => {
+itemsElements.addEventListener('click', event => {
   if (!event.target.classList.contains('game-item')) return;
   setUserSelection(event.target.dataset.item);
   console.log(event)
-});
-advancedItemsElements.addEventListener('click', event => {
-  console.log(event)
-  if (!event.target.classList.contains('game-item')) return;
-  setUserSelection(event.target.dataset.item);
 });

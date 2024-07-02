@@ -9,9 +9,6 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &__img {
-        pointer-events: none;
-    }
 
     &__paper {
         position: absolute;
@@ -57,4 +54,8 @@
         border-radius: 50%;
         box-shadow: 0 5px var(--scissors-shadow), inset 0 5px rgba(0, 0, 150, 0.1);
     }
+}
+
+.game__img {
+    pointer-events: none;
 }
